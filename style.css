@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container {
+    height: 100vh;
+    padding: 50px;
+}
+
+
+
+
+.button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background: cadetblue;
+    color: white;
+    transform: scale(1.5);
+}
+
+
+
+
+
+
+.big-box {
+    width: 600px;
+    height: 300px;
+    margin-top: 50px;
+    background: cornflowerblue;
+    position: relative;
+    transition: 1s;
+}
+
+/* .big-box:hover .little-box {
+    
+} */
+
+.big-box:hover {
+    background: darkblue;
+}
+
+.little-box {
+    width: 100px;
+    height: 100px;
+    background: rgb(130, 84, 238);
+    position: absolute;
+    animation: move 5s infinite alternate ease-in-out;
+}
+
+
+@keyframes move {
+    
+    0% {
+        top: 0;
+        left: 0;
+    }
+    /* 25% {
+        top: 0;
+        left: 500px;
+    }
+    50% {
+        top: 200px;
+        left: 500px;
+    }
+    75% {
+        top: 200px;
+        left: 0;
+    } */
+    100% {
+        left: 500px;
+    }
+
+}
+
